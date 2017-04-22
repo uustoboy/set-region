@@ -1,0 +1,30 @@
+{
+	"name" : "域名助手",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "域名助手:切换测试环境与正式环境",
+	"icons": {
+        "16": "static/img/icon16.png",
+        "48": "static/img/icon48.png",
+        "128": "static/img/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": "static/img/icon16.png",
+        "default_title": "域名助手",
+        "default_popup": "template/setting_popup.html"
+    },
+    "background": {
+        "persistent": true,
+        "scripts": [
+            "static/js/jquery.min.js",
+            "static/js/settings.js",
+            "static/js/menus.js"
+        ]
+    },
+    "permissions":[
+        "tabs",
+        "activeTab",
+        "storage",
+        "contextMenus"
+    ]
+}
